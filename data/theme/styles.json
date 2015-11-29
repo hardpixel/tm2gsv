@@ -1,0 +1,330 @@
+{
+  "def:comment": [
+    "comment",
+    "comment.line",
+    "comment.block"
+  ],
+  "def:shebang": [
+    "comment",
+    "comment.line",
+    "comment.block"
+  ],
+  "def:doc-comment": [
+    "comment",
+    "comment.line",
+    "comment.block"
+  ],
+  "def:doc-comment-element": [
+    "comment",
+    "comment.line",
+    "comment.block"
+  ],
+  "def:constant": [
+    "constant"
+  ],
+  "def:character": [
+    "constant.character",
+    "string"
+  ],
+  "def:string": [
+    "string",
+    "string.literal",
+    "string.quoted.literal",
+    "string.unquoted.heredoc string",
+    "string - string source"
+  ],
+  "def:special-char": [
+    "constant.character.escape",
+    "constant.character.escaped",
+    "string constant",
+    "support.constant"
+  ],
+  "def:number": [
+    "constant.numeric",
+    "constant.numeric.ruby"
+  ],
+  "def:floating-point": [
+    "constant.numeric.floating-point",
+    "constant.numeric",
+    "constant.numeric.ruby"
+  ],
+  "def:decimal": [
+    "constant.numeric.floating-point",
+    "constant.numeric",
+    "constant.numeric.ruby"
+  ],
+  "def:base-n-integer": [
+    "constant.numeric.integer.int32",
+    "constant.numeric.integer.int64",
+    "constant.numeric",
+    "constant.numeric.ruby"
+  ],
+  "def:complex": [
+    "constant.numeric",
+    "constant.numeric.ruby"
+  ],
+  "def:special-constant": [
+    "constant.language"
+  ],
+  "def:boolean": [
+    "constant.language"
+  ],
+  "def:identifier": [
+    "variable",
+    "variable.language",
+    "variable.other"
+  ],
+  "def:function": [
+    "entity.name.function"
+  ],
+  "def:builtin": [
+    "constant.language",
+    "support"
+  ],
+  "def:statement": [
+    "keyword"
+  ],
+  "def:operator": [
+    "keyword.operator"
+  ],
+  "def:keyword": [
+    "keyword.control",
+    "keyword",
+    "storage"
+  ],
+  "def:type": [
+    "support.type"
+  ],
+  "def:preprocessor": [
+    "support.constant",
+    "keyword.control.import"
+  ],
+  "def:error": [
+    "invalid.illegal"
+  ],
+  "def:reserved": [
+    "keyword"
+  ],
+  "def:note": [
+    "comment"
+  ],
+  "diff:location": [
+    "meta.diff.header"
+  ],
+  "diff:added-line": [
+    "markup.inserted"
+  ],
+  "diff:removed-line": [
+    "markup.deleted"
+  ],
+  "diff:changed-line": [
+    "markup.changed"
+  ],
+  "css:keyword": [
+    "support.type.property-name.css"
+  ],
+  "css:at-rules": [
+    "meta.preprocessor.at-rule",
+    "keyword.control.at-rule"
+  ],
+  "css:color": [
+    "constant.other.rgb-value.css"
+  ],
+  "xml:entity": [
+    "declaration.xml-processing"
+  ],
+  "xml:doctype": [
+    "declaration.doctype",
+    "meta.tag.sgml.doctype"
+  ],
+  "xml:namespace": [
+    "entity.name.tag.namespace"
+  ],
+  "xml:tag": [
+    "markup.tag",
+    "declaration.tag",
+    "entity.name.tag",
+    "entity.name.function"
+  ],
+  "xml:element-name": [
+    "entity.name.tag",
+    "markup.tag"
+  ],
+  "xml:attribute-name": [
+    "entity.other.attribute-name"
+  ],
+  "html:dtd": [
+    "string.quoted.docinfo.doctype.DTD",
+    "declaration.doctype.DTD"
+  ],
+  "html:tag": [
+    "markup.tag",
+    "declaration.tag",
+    "entity.name.tag",
+    "entity.name.function"
+  ],
+  "js:function": [
+    "support.function.js"
+  ],
+  "c:preprocessor": [
+    "meta.preprocessor.c"
+  ],
+  "php:string": [
+    "string.quoted.single.php",
+    "string.quoted.double.php"
+  ],
+  "ruby:attribute-definition": [
+    "variable.other.constant",
+    "keyword"
+  ],
+  "ruby:builtin": [
+    "variable.other.constant"
+  ],
+  "ruby:instance-variable": [
+    "variable",
+    "variable.language",
+    "variable.other"
+  ],
+  "ruby:global-variable": [
+    "entity.name.function"
+  ],
+  "ruby:class-variable": [
+    "variable",
+    "variable.language",
+    "variable.other"
+  ],
+  "ruby:special-variable": [
+    "keyword"
+  ],
+  "ruby:predefined-variable": [
+    "constant.language"
+  ],
+  "ruby:constant": [
+    "variable.other.constant",
+    "variable.other",
+    "constant"
+  ],
+  "ruby:symbol": [
+    "constant.other.symbol"
+  ],
+  "ruby:regex": [
+    "string.regexp"
+  ],
+  "ruby:module-handler": [
+    "keyword"
+  ],
+  "rubyonrails:attribute-definition": [
+    "variable.other.constant",
+    "keyword"
+  ],
+  "rubyonrails:builtin": [
+    "support",
+    "variable.other.constant"
+  ],
+  "rubyonrails:instance-variable": [
+    "variable",
+    "variable.language",
+    "variable.other"
+  ],
+  "rubyonrails:global-variable": [
+    "entity.name.function"
+  ],
+  "rubyonrails:class-variable": [
+    "variable",
+    "variable.language",
+    "variable.other"
+  ],
+  "rubyonrails:special-variable": [
+    "keyword"
+  ],
+  "rubyonrails:predefined-variable": [
+    "constant.language"
+  ],
+  "rubyonrails:constant": [
+    "variable.other.constant",
+    "variable.other",
+    "constant"
+  ],
+  "rubyonrails:symbol": [
+    "constant.other.symbol"
+  ],
+  "rubyonrails:regex": [
+    "string.regexp"
+  ],
+  "rubyonrails:module-handler": [
+    "keyword"
+  ],
+  "rubyonrails:module-name": [
+    "entity.name.module",
+    "support.class.ruby",
+    "entity.name.type"
+  ],
+  "rubyonrails:class-name": [
+    "support.class.ruby",
+    "entity.name.type",
+    "entity"
+  ],
+  "rubyonrails:class-inherit": [
+    "entity.other.inherited-class",
+    "support.class.ruby",
+    "entity.name.type"
+  ],
+  "rubyonrails:block-parameter": [
+    "variable.parameter.function"
+  ],
+  "rubyonrails:simple-interpolation": [
+    "string source",
+    "string.interpolated",
+    "source string source",
+    "constant.character.escaped"
+  ],
+  "rubyonrails:complex-interpolation": [
+    "string source",
+    "string.interpolated",
+    "source string source",
+    "constant.character.escaped"
+  ],
+  "rubyonrails:rails": [
+    "source.ruby.rails",
+    "variable.other.constant"
+  ],
+  "python:module-handler": [
+    "keyword"
+  ],
+  "python:special-variable": [
+    "keyword"
+  ],
+  "python:builtin-constant": [
+    "keyword"
+  ],
+  "python:builtin-object": [
+    "constant"
+  ],
+  "python:builtin-function": [
+    "entity.name.function",
+    "constant"
+  ],
+  "perl:type": [
+    "constant"
+  ],
+  "perl:line-directive": [
+    "constant"
+  ],
+  "perl:builtin": [
+    "entity.name.function"
+  ],
+  "perl:variable": [
+    "variable",
+    "variable.language",
+    "variable.other"
+  ],
+  "perl:special-variable": [
+    "variable.other.constant",
+    "constant.language",
+    "keyword"
+  ],
+  "perl:include-statement": [
+    "keyword.control.import",
+    "keyword"
+  ]
+}

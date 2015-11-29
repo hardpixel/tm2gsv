@@ -1,0 +1,58 @@
+{
+  "text": {
+    "foreground": "foreground",
+    "background": "background"
+  },
+  "cursor": {
+    "foreground": "caret"
+  },
+  "selection": {
+    "foreground": "selectionForeground",
+    "background": "selection"
+  },
+  "line-numbers": {
+    "foreground": [
+      "gutterForeground",
+      "def:comment.foreground"
+    ],
+    "background": [
+      "gutter",
+      "def:comment.background",
+      "background"
+    ]
+  },
+  "current-line": {
+    "background": "lineHighlight"
+  },
+  "current-line-number": {
+    "background": "lineHighlight"
+  },
+  "bracket-match": {
+    "foreground": [
+      "bracketsForeground"
+    ],
+    "fontStyle": "bracketsOptions"
+  },
+  "bracket-mismatch": {
+    "foreground": [
+      "bracketContentsForeground",
+      "bracketsForeground"
+    ]
+  },
+  "search-match": {
+    "foreground": "findHighlightForeground",
+    "background": "findHighlight"
+  },
+  "draw-spaces": {
+    "foreground": "invisibles"
+  },
+  "background-pattern": {
+    "background": "lineHighlight"
+  },
+  "right-margin": {
+    "background": [
+      "guide",
+      "background"
+    ]
+  }
+}
