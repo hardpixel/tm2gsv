@@ -7,6 +7,6 @@ Tm2Gsv is a command line tool that converts Text Mate themes and language bundle
 
 ## Commands
 
-  tm2gsv help [COMMAND]               # Describe available commands or one specific command
-  tm2gsv theme SOURCE DESTINATION     # Convert TextMate theme(s) to GTK Source View color scheme(s)
-  tm2gsv language SOURCE DESTINATION  # Convert TextMate language(s) to GTK Source View language(s)
+    tm2gsv help [COMMAND]               # Describe available commands or one specific command
+    tm2gsv theme SOURCE DESTINATION     # Convert TextMate theme(s) to GTK Source View color scheme(s)
+    tm2gsv language SOURCE DESTINATION  # Convert TextMate language(s) to GTK Source View language(s)
