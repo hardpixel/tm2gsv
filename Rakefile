@@ -21,7 +21,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://hardpixel.github.io/tm2gsv"
   gem.license = "MIT"
   gem.summary = %Q{A command-line tool for developing wordpress themes and plugins}
-  gem.description = %Q{Convert TextMate color scgemes to GTK Source View color schemes.}
+  gem.description = %Q{Convert TextMate color schemes to GTK Source View color schemes.}
   gem.email = "info@hardpixel.eu"
   gem.authors = ["Jonian Guveli", "Olibia Tsati"]
   # dependencies defined in Gemfile
