@@ -67,7 +67,7 @@ module Tm2Gsv
         opts.each do |key, value|
           value = [value].flatten.reverse
           if key == 'fontStyle'
-            setting.merge! parse_setting_font_styles(key, value)
+            setting.merge! parse_setting_font_styles(value)
           else
             setting.merge! parse_setting_styles(key, value)
           end
@@ -76,7 +76,7 @@ module Tm2Gsv
         return setting
       end
 
-      def parse_setting_font_styles(key, value)
+      def parse_setting_font_styles(value)
         settings = @settings.first['settings']
         styles = {}
 
