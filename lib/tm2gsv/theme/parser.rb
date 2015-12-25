@@ -48,7 +48,7 @@ module Tm2Gsv
 
         @theme[:styles] = {}
         data.each do |key, value|
-          style = styles.select { |k, v| value.include?(k) }
+          style = styles.select { |k, _v| value.include?(k) }
           @theme[:styles][key] = style.values[0] if style.any?
         end
       end
@@ -69,13 +69,13 @@ module Tm2Gsv
         opts.each do |key, value|
           value = [value].flatten.reverse
           if key == 'fontStyle'
-            style = settings.select { |k, v| value.include? k }.values[0]
+            style = settings.select { |k, _v| value.include? k }.values[0]
             style.to_s.split.each { |i| setting[i] = true }
           else
             value.each do |item|
               if item.include? '.'
                 item = item.split('.')
-                style = styles.select { |k, v| k == item[0] }
+                style = styles.select { |k, _v| k == item[0] }
                 style = style[item[0]][item[1]] rescue nil
               else
                 style = settings[item] rescue nil

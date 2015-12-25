@@ -11,7 +11,7 @@ end
 class Hash
   def except(keys=[])
     keys = [keys].flatten
-    self.reject { |k,v| keys.include?(k) }
+    self.reject { |k, _v| keys.include?(k) }
   end
 end
 
