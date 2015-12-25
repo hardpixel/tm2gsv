@@ -69,7 +69,7 @@ module Tm2Gsv
         opts.each do |key, value|
           value = [value].flatten.reverse
           if key == 'fontStyle'
-            style = settings.select { |k, _v| value.include? k }.values[0]
+            style = settings.select { |k, _v| value.include?(k) }.values[0]
             style.to_s.split.each { |i| setting[i] = true }
           else
             value.each do |item|
