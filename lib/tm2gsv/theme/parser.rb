@@ -62,30 +62,47 @@ module Tm2Gsv
       end
 
       def parse_setting(opts)
-        settings = @settings.first['settings']
-        styles = @theme[:styles]
         setting = {}
 
         opts.each do |key, value|
           value = [value].flatten.reverse
           if key == 'fontStyle'
-            style = settings.select { |k, _v| value.include?(k) }.values[0]
-            style.to_s.split.each { |i| setting[i] = true }
+            setting.merge! parse_setting_font_styles(key, value)
           else
-            value.each do |item|
-              if item.include? '.'
-                item = item.split('.')
-                style = styles.select { |k, _v| k == item[0] }
-                style = style[item[0]][item[1]] rescue nil
-              else
-                style = settings[item] rescue nil
-              end
-              setting[key] = style unless style.nil?
-            end
+            setting.merge! parse_setting_styles(key, value)
           end
         end
 
         return setting
+      end
+
+      def parse_setting_font_styles(key, value)
+        settings = @settings.first['settings']
+        styles = {}
+
+        style = settings.select { |k, _v| value.include?(k) }.values[0]
+        style.to_s.split.each { |i| styles[i] = true }
+
+        return styles
+      end
+
+      def parse_setting_styles(key, value)
+        settings = @settings.first['settings']
+        theme_styles = @theme[:styles]
+        styles = {}
+
+        value.each do |item|
+          if item.include? '.'
+            item = item.split('.')
+            style = theme_styles.select { |k, _v| k == item[0] }
+            style = style[item[0]][item[1]] rescue nil
+          else
+            style = settings[item] rescue nil
+          end
+          styles[key] = style unless style.nil?
+        end
+
+        return styles
       end
 
       def load_data(file)
