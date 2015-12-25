@@ -16,7 +16,8 @@ module Tm2Gsv
     desc 'language SOURCE DESTINATION', 'Convert TextMate language(s) to GTK Source View language(s)'
     long_desc 'Converts a single file or all files in a folder'
     def language(source, destination=nil)
-      Tm2Gsv::Language.new(self, source, destination)
+      converter = Tm2Gsv::Language.new(self)
+      converter.convert(source, destination)
     end
 
   end
